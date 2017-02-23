@@ -5,8 +5,8 @@ This repository will serve as a documentation for the robot build for the IEEE R
 [**Link to the competition rules**](https://drive.google.com/file/d/0Byoc_-AOKdM3Y2l4aGluVUU1c2M/view?usp=sharing)
 
 ----------
-Competition Description & Rules
------------
+#Competition Description & Rules
+
 Motivation:
   :	The objective of the competition is to demonstrate the use of an autonomous robot on the surface to map a tunnel and investigate “buried caches” at the tunnel endpoints. The game field simulates a tunnel containing infrastructure such as steel cables or rails for material transport and electrical conductors for lighting or communications. Surface obstacles and anomalies represent typical operational challenges.
 
@@ -32,8 +32,8 @@ Playing Field:
 For more rules and requirements please reference the competition handbook [**competition rules**](https://drive.google.com/file/d/0Byoc_-AOKdM3Y2l4aGluVUU1c2M/view?usp=sharing)
  
  ----------
-Our Approach
------------
+#Our Approach
+
 
 Abstract:
  : In our approach to the problem we decided to create a land robot. We decided to go with a differential drive based robot with two caster wheels due to the stability it offers. We will be using multiple controllers, and SOC computers to execute the different functionalities of the robot. In our approach, we will also try to make our design decisions in every aspect as modular as possible, and use sensor, and controller packages to make the system as easy to troubleshoot as possible.
