@@ -35,3 +35,15 @@ For more rules and requirements please reference the competition handbook [**com
 Our Approach
 -----------
 
+Abstract:
+ : In our approach to the problem we decided to create a land robot. We decided to go with a differential drive based robot with two caster wheels due to the stability it offers. We will be using multiple controllers, and SOC computers to execute the different functionalities of the robot. In our approach, we will also try to make our design decisions in every aspect as modular as possible, and use sensor, and controller packages to make the system as easy to troubleshoot as possible.
+
+Drive: 
+: As mentioned earlier, We decided to proceed with the differential drive control method for multiple reasons. 
+
+> - Differential Drive requires only two motors which makes power consumption lower in general than having to drive more than two motors.
+> - When driving a robot in differential drive creating a closed feedback (PID) loop becomes easier than having to deal with a closed feedback loop for four motors to move autonomously.
+> - Design, mechanical construction and control algorithm can never get any simpler than this driving technique, and the concept can be incorporated in almost any kind of robots including legged robots.
+> - A problem with the differential drive is that the robot does not drive as expected. It neither drives along a straight line nor turn exactly at expected angles, especially when we use DC motors. This is due to difference in the number of rotations of each wheel in a given amount of time. To handle this problem, we need to add correction factor to the motor speed which will be discussed in our choice for the motor controller.
+
+Tires, and motor's choice
