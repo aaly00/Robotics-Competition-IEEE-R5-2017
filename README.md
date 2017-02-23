@@ -33,10 +33,10 @@ For more rules and requirements please reference the competition handbook [**com
  
  ----------
 ##Our Approach##
------------
 
 ####Abstract:#####
  : In our approach to the problem we decided to create a land robot. We decided to go with a differential drive based robot with two caster wheels due to the stability it offers. We will be using multiple controllers, and SOC computers to execute the different functionalities of the robot. In our approach, we will also try to make our design decisions in every aspect as modular as possible, and use sensor, and controller packages to make the system as easy to troubleshoot as possible.
+
 ####Drive: ####
 : As mentioned earlier, We decided to proceed with the differential drive control method for multiple reasons. 
 
