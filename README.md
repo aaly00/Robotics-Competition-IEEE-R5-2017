@@ -13,7 +13,9 @@ Motivation:
 ###Rules###
 Playing Field:
   :	The Game Field base is 1⁄2” x 8’ x 8’ MDF panels. Centered on top of the MDF is a 3/16” x 7’ x 7’ pegboard. Forty-nine 2”x1’x1’ “grid blocks” cut from sheets of Extruded Polystyrene (XPS) insulation are Page 2 of 11 V4, Nov 5, 2016 arranged in a 7 x 7 grid on the pegboard. The playing field will be then covered in whole by a 1⁄4” thick sheet of acrylic glass which will create a surface over the grid blocks. The robot will navigate on the acrylic surface. Acrylic is employed to enhance audience viewing. To minimize the sole use of vision for subsurface mapping, sheets of paper will be interspersed between the grid blocks and acrylic. Any component may vary in color or physical properties. A minimum of seven contiguous grid blocks under the Game Field surface will be removed to form the tunnel. The endpoints will NOT be located on the same side of the Game Field. Infrastructure emulating  winch cables and power lines will run inside the tunnel from endpoint to endpoint. The winch cables are emulated by 16-Gauge galvanized steel wire. The power cables will be emulated by a plastic shield incandescent trouble light connected to a 25’ 16/3 extension cord connected to the RMEC 120V 60Hz. Additional grid blocks may be removed to form “dead ends” connected to the OT. A dead end will not contain infrastructure. Bonus points will be awarded for correctly mapping dead ends.  “Buried” caches with a removable lid are located in the Game Field perimeter. Each of the two tunnel endpoints will include a cache. A single white die with black points (Cache Die) will be located in the bottom of each OT endpoint cache. One or more obstructions will be placed on the surface to emulate operational challenges. These surface obstructions will consist of grid blocks removed to form tunnels. Only one grid block will be used per obstruction. The robot START/STOP location will always occupy grid location A7 and serve as a geographic reference for displaying and judging a map. A7 will not contain any portion of the OT or a dead end and it will not contain a buried cache.
+  
   ![Field Grid Location Reference](http://i.imgur.com/U3f8P9k.png)
+
 
  ![Playing Field](http://i.imgur.com/rrfTyYz.png)
 	Figure 2: Playing field (A7 is starting location)
@@ -47,8 +49,11 @@ Figure 3:  Differential drive diagram.
 > - Design, mechanical construction and control algorithm can never get any simpler than this driving technique, and the concept can be incorporated in almost any kind of robots including legged robots.
 > - A problem with the differential drive is that the robot does not drive as expected. It neither drives along a straight line nor turn exactly at expected angles, especially when we use DC motors. This is due to difference in the number of rotations of each wheel in a given amount of time. To handle this problem, we need to add correction factor to the motor speed which will be discussed in our choice for the motor controller.
 
-####Tires, and motor's choice:####
+####Wheels, and motor's choice:####
 : **Force (exerted by the wheel on the surface) x radius (of the wheel) = torque (of the motor)** If we need to exert a high force,since the robot may be heavy, we need to increase either the torque or decrease the radius of the wheel. In order to achieve the same forward speed for the robot, smaller wheels have to rotate faster. Using [society of robots guide](http://www.societyofrobots.com/mechanics_dynamics.shtml) on amount of torque needed for a particular differential drive robot given our estimated mass, and [wheels choice](https://www.pololu.com/product/1433), the torque needed is around 170 oz-in so we decided to go with the pololu [70:1 Metal Gearmotor 37Dx70L mm with 64 CPR Encoder](https://www.pololu.com/product/2825) since it will offer best combination of crusing speed and torque.
+
+####Controllers:####
+
 
 
 
