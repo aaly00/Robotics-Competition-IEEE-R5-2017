@@ -39,13 +39,16 @@ Abstract:
  : In our approach to the problem we decided to create a land robot. We decided to go with a differential drive based robot with two caster wheels due to the stability it offers. We will be using multiple controllers, and SOC computers to execute the different functionalities of the robot. In our approach, we will also try to make our design decisions in every aspect as modular as possible, and use sensor, and controller packages to make the system as easy to troubleshoot as possible.
 Drive: 
 : As mentioned earlier, We decided to proceed with the differential drive control method for multiple reasons. 
+
 ![Differential drive](http://i.imgur.com/F9FaJ1Q.png)
+Figure 3:  Differential drive diagram.
 > - Differential Drive requires only two motors which makes power consumption lower in general than having to drive more than two motors.
 > - When driving a robot in differential drive creating a closed feedback (PID) loop becomes easier than having to deal with a closed feedback loop for four motors to move autonomously.
 > - Design, mechanical construction and control algorithm can never get any simpler than this driving technique, and the concept can be incorporated in almost any kind of robots including legged robots.
 > - A problem with the differential drive is that the robot does not drive as expected. It neither drives along a straight line nor turn exactly at expected angles, especially when we use DC motors. This is due to difference in the number of rotations of each wheel in a given amount of time. To handle this problem, we need to add correction factor to the motor speed which will be discussed in our choice for the motor controller.
 
 Tires, and motor's choice:
- :  Force (exerted by the wheel on the surface) x radius (of the wheel) = torque (of the motor)
-If we need to exert a high force since the robot may be heavy, then we need to increase either the torque or decrease the radius of the wheel.
-In order to achieve the same forward speed for the robot, smaller wheels have to rotate faster. 
+: **Force (exerted by the wheel on the surface) x radius (of the wheel) = torque (of the motor)** If we need to exert a high force,since the robot may be heavy, we need to increase either the torque or decrease the radius of the wheel. In order to achieve the same forward speed for the robot, smaller wheels have to rotate faster. Using [society of robots guide](http://www.societyofrobots.com/mechanics_dynamics.shtml) on amount of torque needed for a particular differential drive robot given our estimated mass, and [wheels choice](https://www.pololu.com/product/1433), the torque needed is around 170 oz-in so we decided to go with the pololu [70:1 Metal Gearmotor 37Dx70L mm with 64 CPR Encoder](https://www.pololu.com/product/2825) since it will offer best combination of crusing speed and torque.
+
+
+
