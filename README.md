@@ -5,7 +5,7 @@ This repository will serve as a documentation for the robot build for the IEEE R
 [**Link to the competition rules**](https://drive.google.com/file/d/0Byoc_-AOKdM3Y2l4aGluVUU1c2M/view?usp=sharing)
 
 ----------
-## Competition Description & Rules##
+## Competition Description & Rules
 -----------
 Motivation:
 The objective of the competition is to demonstrate the use of an autonomous robot on the surface to map a tunnel and investigate “buried caches” at the tunnel endpoints. The game field simulates a tunnel containing infrastructure such as steel cables or rails for material transport and electrical conductors for lighting or communications. Surface obstacles and anomalies represent typical operational challenges.
